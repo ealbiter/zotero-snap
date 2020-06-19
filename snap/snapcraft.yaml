@@ -12,6 +12,13 @@ grade: stable
 confinement: strict
 architectures: [amd64]
 
+slots:
+  zoterofolder:
+    interface: content
+    content: writable-data
+    write:
+      - $SNAP_USER_COMMON/Zotero
+
 parts:
   icon:
     plugin: dump
